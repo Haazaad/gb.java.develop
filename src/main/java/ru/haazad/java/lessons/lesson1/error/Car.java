@@ -1,10 +1,15 @@
 package ru.haazad.java.lessons.lesson1.error;
 
-public class Car {
-    public Engine engine;
+abstract class Car {
+    private Engine engine;
     private String color;
     private String name;
 
+    public Car(Engine engine, String color, String name) {
+        this.engine = engine;
+        this.color = color;
+        this.name = name;
+    }
 
     protected void start() {
         System.out.println("Car starting");

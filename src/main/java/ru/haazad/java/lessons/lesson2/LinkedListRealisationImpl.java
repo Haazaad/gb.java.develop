@@ -9,6 +9,11 @@ public class LinkedListRealisationImpl<E> implements ListRealisation<E> {
     private Node<E> firstNode;
     private Node<E> lastNode;
 
+    public LinkedListRealisationImpl() {
+        this.size = 0;
+        this.data = new Node[0];
+    }
+
     @Override
     public int size() {
         return size;

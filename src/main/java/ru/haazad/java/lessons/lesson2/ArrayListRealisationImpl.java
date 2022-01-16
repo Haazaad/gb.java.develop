@@ -7,6 +7,11 @@ public class ArrayListRealisationImpl<E> implements ListRealisation<E> {
     private int size;
     private E[] data;
 
+    public ArrayListRealisationImpl() {
+        this.size = 0;
+        this.data = (E[]) new Object[0];
+    }
+
     @Override
     public int size() {
         return size;

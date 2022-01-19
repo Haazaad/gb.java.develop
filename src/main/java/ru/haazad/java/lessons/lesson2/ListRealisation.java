@@ -7,7 +7,7 @@ public interface ListRealisation<E> {
     int size();
 
     default boolean isEmpty() {
-        return size() != 0;
+        return size() == 0;
     }
 
     int indexOf(E value);

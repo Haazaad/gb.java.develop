@@ -4,12 +4,19 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 public class ArrayListRealisationImpl<E> implements ListRealisation<E> {
+    private static final int DEFAULT_CAPACITY = 16;
+
     private int size;
     private E[] data;
 
     public ArrayListRealisationImpl() {
         this.size = 0;
-        this.data = (E[]) new Object[0];
+        this.data = (E[]) new Object[DEFAULT_CAPACITY];
+    }
+
+    public ArrayListRealisationImpl(int capacity) {
+        this.size = 0;
+        this.data = (E[]) new Object[capacity];
     }
 
     @Override

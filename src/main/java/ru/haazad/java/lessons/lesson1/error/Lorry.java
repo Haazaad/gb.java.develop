@@ -17,7 +17,7 @@ public class Lorry extends Car implements Stopable, Moveable {
     }
 
     @Override
-    void open() {
+    public void open() {
 
     }
 }

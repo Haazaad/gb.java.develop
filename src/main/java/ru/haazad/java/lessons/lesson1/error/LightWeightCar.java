@@ -1,6 +1,6 @@
 package ru.haazad.java.lessons.lesson1.error;
 
-public class LightWeightCar extends Car implements Moveable{
+public class LightWeightCar extends Car implements Moveable, Stopable{
 
     public LightWeightCar(Engine engine, String color, String name) {
         super(engine, color, name);
@@ -16,4 +16,8 @@ public class LightWeightCar extends Car implements Moveable{
         System.out.println("Car is moving");
     }
 
+    @Override
+    public void stop() {
+
+    }
 }

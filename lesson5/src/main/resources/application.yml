@@ -11,3 +11,10 @@ spring:
     url: jdbc:h2:mem:testdb
     username: postgre
     password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.H2Dialect
+      temp:
+        use_jdbc_metadata_defaults: false
+    show-sql: true

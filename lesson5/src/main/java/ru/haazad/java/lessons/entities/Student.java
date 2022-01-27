@@ -1,12 +1,14 @@
 package ru.haazad.java.lessons.entities;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Data
 @Table(name = "students")
+@NoArgsConstructor
 public class Student {
 
     @Id

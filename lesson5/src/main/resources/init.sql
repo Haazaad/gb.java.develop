@@ -1,8 +1,8 @@
 drop table students if exists;
 
-create table students
+create table students if not exists
 (
-    id   long auto_increment,
+    id   bigserial,
     name varchar2(256) not null,
     mark int           not null,
     constraint STUDENTS_PK

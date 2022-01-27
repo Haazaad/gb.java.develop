@@ -6,7 +6,11 @@
 
     <groupId>ru.haazad.java.lessons</groupId>
     <artifactId>gb.java.develop</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
+    <modules>
+        <module>lesson5</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

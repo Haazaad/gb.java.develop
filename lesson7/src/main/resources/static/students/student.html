@@ -1,0 +1,18 @@
+<div class="container">
+    <p></p>
+    <h3>Student information</h3>
+    <p></p>
+    <div class="container">
+        Student id: {{ view_student.id }}
+        <p></p>
+        Student name: {{ view_student.name }}
+        <p></p>
+        Student age: {{ view_student.age }}
+    </div>
+    <p></p>
+    <button class="btn btn-primary btn-sm" style="background-color: #e3f2fd; color: black"
+            ng-click="moveToEditStudent(view_student.id)">Edit
+    </button>
+    <p></p>
+    <hr>
+</div>

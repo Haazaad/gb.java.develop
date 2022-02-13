@@ -1,0 +1,14 @@
+<div class="container">
+    <p></p>
+    <h3>Edit student</h3>
+    <p></p>
+    <form novalidate ng-submit="modifyStudent()">
+        <input class="form-control" type="text" hidden placeholder="Student id" ng-model="updated_student.id">
+        <p></p>
+        <input class="form-control" type="text" placeholder="Student name" ng-model="updated_student.name">
+        <p></p>
+        <input class="form-control" type="number" placeholder="Student age" ng-model="updated_student.age">
+        <p></p>
+        <button type="submit" class="btn btn-primary" style="background-color: #e3f2fd; color: black">Save changes</button>
+    </form>
+</div>

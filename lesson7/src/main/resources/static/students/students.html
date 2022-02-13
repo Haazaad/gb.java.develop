@@ -1,0 +1,31 @@
+<div class="container">
+    <p></p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">age</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="p in students">
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.age }}</td>
+            <td>
+                <button class="btn btn-primary btn-sm" style="background-color: #e3f2fd; color: black"
+                        ng-click="moveToViewStudent(p.id)">View
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-primary btn-sm" ng-click="deleteStudent(p.id)"
+                        style="color: red; background-color: #e3f2fd" title="Delete student">&#10006;
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
